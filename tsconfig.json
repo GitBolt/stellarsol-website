@@ -19,15 +19,6 @@
         "@/components/*": [
           "components/*"
         ],
-        "@/lib/*": [
-          "lib/*"
-        ],
-        "@/elements/*": [
-          "elements/*"
-        ],
-        "@/types/*": [
-          "types/*"
-        ],
         "@/util/*": [
           "util/*"
         ],
@@ -42,9 +33,6 @@
         ],
         "@/styles/*": [
           "styles/*"
-        ],
-        "@/external/*": [
-          "external/*"
         ],
       },
     },
