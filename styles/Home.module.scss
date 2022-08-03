@@ -1,20 +1,23 @@
 @import 'mixins/button.scss';
 
 .upper {
-  margin-top: 10rem;
+  margin-top: 15rem;
   display: flex;
   flex-flow: column;
   > h1 {
     font-size: 7.2rem;
     text-align: center;
-    background: radial-gradient(50% 935.45% at 50% 50%, #F3F3F3 0%, rgba(237, 234, 255, 0.5) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    background: radial-gradient(50% 935.45% at 50% 50%, #F3F3F3 0%, rgba(237, 234, 255, 0.5) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     mix-blend-mode: color-dodge;
-    width: 50%;
+    width: 47%;
     align-self: center;
     font-weight: 900;
+    @media screen and (max-width: 1900px) {
+      width: 60%;
+    }
   }
 }
 
