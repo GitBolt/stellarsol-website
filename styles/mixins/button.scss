@@ -1,0 +1,38 @@
+@mixin primary-button {
+    color: white;
+    z-index: 20;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20rem;
+    height: 5.6rem;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    font-weight: 800;
+    filter: drop-shadow(2px 16px 20px rgba(0, 0, 0, 0.09));
+    background:
+        radial-gradient(80.38% 222.5% at -13.75% -12.36%, #98F9FF 0%, rgba(255, 255, 255, 0) 100%),
+        radial-gradient(90.16% 143.01% at 15.32% 21.04%, rgba(165, 239, 255, 0.5) 0%, rgba(110, 191, 244, 0.111979) 77.08%, rgba(70, 144, 213, 0) 100%),
+        radial-gradient(80.69% 208.78% at 108.28% 112.58%, #EABFFF 0%, rgba(135, 38, 183, 0) 100%);
+
+    & > div {
+        width: 98%;
+        height: 92%;
+        border-radius: 5rem;
+        background: #0D0A2C;
+    }
+
+    & > div > p {
+        border-radius: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        width: 98%;
+        height: 92%;
+        left: 1%;
+        top: 4%;
+        background: radial-gradient(90% 145% at 15% 20%, #a5efff80 0%, #6ebef42d 75%, #0D0A2C 100%);
+    }
+}

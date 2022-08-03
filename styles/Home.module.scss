@@ -1,0 +1,47 @@
+@import 'mixins/button.scss';
+
+.upper {
+  margin-top: 10rem;
+  display: flex;
+  flex-flow: column;
+  > h1 {
+    font-size: 7.2rem;
+    text-align: center;
+    background: radial-gradient(50% 935.45% at 50% 50%, #F3F3F3 0%, rgba(237, 234, 255, 0.5) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    mix-blend-mode: color-dodge;
+    width: 50%;
+    align-self: center;
+    font-weight: 900;
+  }
+}
+
+.button {
+  @include primary-button;
+  align-self: center;
+  width: 38rem;
+  height: 8rem;
+  margin-top: 4rem;
+  > div p {
+    display: flex;
+    flex-flow: column;
+    font-size: 1.8rem;
+    font-weight: 700;
+    > span {
+      font-weight: 400;
+      font-size: 1.6rem;
+    }
+  }
+
+}
+
+.uppermesh {
+  height: 170vh;
+  width: 170vw;
+  filter: blur(20px);
+  position: absolute;
+  transform: translate(-20%, -5%) rotate(-5deg);
+  z-index: 0;
+}

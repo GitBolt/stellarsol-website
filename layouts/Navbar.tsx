@@ -16,14 +16,14 @@ export const Navbar = () => (
       <h1 className='text-white text-[2.4rem] font-bold'>StellarSOL</h1>
     </div>
     <div className={styles.links}>
-      <a>How to use</a>
-      <a>Features</a>
-      <a>Testimonials</a>
-      <div className={styles.button}>
-        <div>
-          <a>Add to Chrome</a>
-        </div>
-      </div>
+      <a href="#">How to use</a>
+      <a href="#">Features</a>
+      <a href="#">Testimonials</a>
+      <a href="#" className={styles.button}>
+          <div>
+            <p>Add to Chrome</p>
+          </div>
+        </a>
     </div>
   </nav>
 );

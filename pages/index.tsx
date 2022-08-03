@@ -9,8 +9,29 @@ export default function Home() {
   return (
     <div className={styles.main}>
       <DefaultHead />
-      <Navbar/>
-      <Image src={uppermesh} alt="uppermesh"/>
+      <Navbar />
+      <div className={styles.uppermesh}>
+        <Image
+          src={uppermesh}
+          alt="StellarSOL Logo"
+          width="100%"
+          height="100%"
+          layout='fill'
+        />
+      </div>
+      <div className={styles.upper}>
+        <h1>
+          Shop on your favourite online stores with Solana
+        </h1>
+        <a className={styles.button} href="#">
+          <div>
+            <p>
+              Add to Chrome 
+              <span>It&apos;s completetly free</span>
+            </p>
+          </div>
+        </a>
+      </div>
     </div>
   )
 }
